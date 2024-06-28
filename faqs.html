@@ -1,468 +1,794 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Lorem, ipsum dolor.</title>
 
-  <title>Lorem, ipsum dolor.</title>
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff8302" />
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="theme-color" content="#ff8302">
-  
-  <!-- BOOTSTRAP -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-  <!-- ICONS -->
-  <!-- <link rel="stylesheet" href="css/ilmosys-icon.css"> -->
-  <link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
-  <link rel="stylesheet" href="css/icons/style.css">
-  <!-- <link rel="stylesheet" href="css/icons/icon2/style.css"> -->
-  <link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+    <!-- ICONS -->
+    <!-- <link rel="stylesheet" href="css/ilmosys-icon.css"> -->
+    <link rel="stylesheet" href="css/icons/fontawesome/css/style.css" />
+    <link rel="stylesheet" href="css/icons/style.css" />
+    <!-- <link rel="stylesheet" href="css/icons/icon2/style.css"> -->
+    <link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css" />
 
+    <!-- THEME / PLUGIN CSS -->
+    <link rel="stylesheet" href="js/vendors/slick/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ajustes.css" />
+  </head>
 
-  <!-- THEME / PLUGIN CSS -->
-  <link rel="stylesheet" href="js/vendors/slick/slick.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/ajustes.css">
-
-
-</head>
-
-<body id="home">
-
-  <a href="#" target="_blank" class="text-decoration-none carrito-flotante">
-    <span	class="d-none">Comprar</span>
-    <span class="fa fa-shopping-cart carrito"></span>
-  </a>
-
-  <div class="whatsapp-box">
-    <p class="mb-0">
-      Hola, ¿Necesitás ayuda?
-    </p>
-    <a href="https://wa.me/" target="_blank" class="text-decoration-none whatsapp-flotante">
-      <span	class="d-none">Whatsapp</span>
-      <span class="fa fa-whatsapp whatsapp"></span>
+  <body id="home">
+    <a href="#" target="_blank" class="text-decoration-none carrito-flotante">
+      <span class="d-none">Comprar</span>
+      <span class="fa fa-shopping-cart carrito"></span>
     </a>
-  </div>
 
-  <div class="body">
-   
-    <!-- HEADER -->
-    <header>
-      <nav class="navbar-inverse navbar-lg navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="index.html" class="navbar-brand brand"><img src="images/logo.png" alt="logo" class="logo"></a>
-          </div>
+    <div class="whatsapp-box">
+      <p class="mb-0">Hola, ¿Necesitás ayuda?</p>
+      <a
+        href="https://wa.me/"
+        target="_blank"
+        class="text-decoration-none whatsapp-flotante"
+      >
+        <span class="d-none">Whatsapp</span>
+        <span class="fa fa-whatsapp whatsapp"></span>
+      </a>
+    </div>
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <div class="body">
+      <!-- HEADER -->
+      <header>
+        <nav class="navbar-inverse navbar-lg navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="index.html" class="navbar-brand brand"
+                ><img src="images/inhisac_logo.svg" alt="logo" class="logo"
+              /></a>
+            </div>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="index.html">Home</a>
-              </li>
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-              <li class="dropdown mm-menu">
-                <a class="page-scroll" href="productos.html">Productos</a>
-              </li>
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="index.html">Home</a>
+                </li>
 
-              <li class="dropdown mm-menu">
-                <a class="page-scroll" href="smarty.html">Smarty</a>
-              </li>
+                <li class="dropdown mm-menu">
+                  <a class="page-scroll" href="productos.html">Productos</a>
+                </li>
 
-              <li class="dropdown mm-menu d-lg-block d-md-none">
-                <a class="page-scroll" href="soluciones.html">Soluciones</a>
-              </li>
+                <!-- <li class="dropdown mm-menu">
+                  <a class="page-scroll" href="smarty.html">Smarty</a>
+                </li> -->
 
-              <li class="dropdown mm-menu">
-                <a class="page-scroll" href="#">Preguntas Frecuentes</a>
-              </li>
+                <li class="dropdown mm-menu d-lg-block d-md-none">
+                  <a class="page-scroll" href="soluciones.html">Soluciones</a>
+                </li>
 
-              <li class="dropdown mm-menu">
-                <a class="page-scroll" href="buscar_tienda.html">Dónde encontrarnos</a>
-              </li>
-            </ul>
-            <div class="mt-2 d-md-block d-lg-none boton-solucionador">
-              <a class="btn btn-naranja" href="soluciones.html">Solucionador</a>
+                <li class="dropdown mm-menu">
+                  <a class="page-scroll" href="#">Preguntas Frecuentes</a>
+                </li>
+
+                <li class="dropdown mm-menu">
+                  <a class="page-scroll" href="buscar_tienda.html"
+                    >Dónde encontrarnos</a
+                  >
+                </li>
+              </ul>
+              <div class="mt-2 d-md-block d-lg-none boton-solucionador">
+                <a class="btn btn-naranja" href="soluciones.html"
+                  >Solucionador</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
-    <!-- benifits 1 -->
-    <div class="intro intro-why bg-orange faqs-margin-top">
-
-      <div class="row center-content">
-
-        <!-- <div class="col-sm-6 banner3">
+      <!-- benifits 1 -->
+      <div class="intro intro-why bg-orange faqs-margin-top">
+        <div class="row center-content">
+          <!-- <div class="col-sm-6 banner3">
           <img src="images/banners/banner-home-4.jpg" class="pull-left img-fluid" alt="" />
         </div> -->
 
-        <div class="col-sm-offset-3 col-sm-6">
-          <div class="why faqs">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  
-                  <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                      aria-expanded="true" aria-controls="collapseOne">
-                      <img src="images/icons/emojis-1.png"> ¿Lorem ipsum dolor sit amet?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum dolores consequuntur.
+          <div class="col-sm-offset-3 col-sm-6">
+            <div class="why faqs">
+              <div
+                class="panel-group"
+                id="accordion"
+                role="tablist"
+                aria-multiselectable="true"
+              >
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <img src="images/icons/emojis-1.png" /> ¿Lorem ipsum
+                        dolor sit amet?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="panel-collapse collapse in"
+                    role="tabpanel"
+                    aria-labelledby="headingOne"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cupiditate laborum dolores consequuntur.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <img src="images/icons/emojis-2.png"> ¿Lorem ipsum dolor sit amet consectetur adipisicing?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis rem accusamus atque.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <img src="images/icons/emojis-2.png" /> ¿Lorem ipsum
+                        dolor sit amet consectetur adipisicing?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingTwo"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Facilis rem accusamus atque.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <img src="images/icons/emojis-3.png"> ¿Lorem ipsum dolor sit, amet consectetur adipisicing elit?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis minus ipsa! Quas at temporibus labore nisi possimus ipsam, repellat minus ratione, quisquam molestias adipisci ab aperiam illum ad fugiat.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <img src="images/icons/emojis-3.png" /> ¿Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingThree"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iusto facilis minus ipsa! Quas at temporibus labore nisi
+                      possimus ipsam, repellat minus ratione, quisquam molestias
+                      adipisci ab aperiam illum ad fugiat.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFour">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      <img src="images/icons/emojis-4.png"> ¿Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non odio alias excepturi totam?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quis voluptatum perferendis et vero aliquid accusamus error corporis porro quas.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        <img src="images/icons/emojis-4.png" /> ¿Lorem, ipsum
+                        dolor sit amet consectetur adipisicing elit. Non odio
+                        alias excepturi totam?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingFour"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Sapiente quis voluptatum perferendis et vero aliquid
+                      accusamus error corporis porro quas.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFive">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      <img src="images/icons/emojis-5.png"> ¿Lorem ipsum dolor sit amet?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFive">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        <img src="images/icons/emojis-5.png" /> ¿Lorem ipsum
+                        dolor sit amet?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseFive"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingFive"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Provident.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingSix">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      <img src="images/icons/emojis-6.png"> ¿Lorem ipsum dolor sit amet consectetur?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae error asperiores ipsa quia.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingSix">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseSix"
+                        aria-expanded="false"
+                        aria-controls="collapseSix"
+                      >
+                        <img src="images/icons/emojis-6.png" /> ¿Lorem ipsum
+                        dolor sit amet consectetur?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseSix"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingSix"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem molestiae error asperiores ipsa quia.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingSeven">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                      <img src="images/icons/emojis-7.png"> ¿Lorem ipsum dolor sit amet?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                  <div class="panel-body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam saepe id, illo sapiente, suscipit reprehenderit cupiditate vitae doloremque similique ex, sit laborum deleniti maiores eveniet soluta repellendus esse animi cumque.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingSeven">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="collapseSeven"
+                      >
+                        <img src="images/icons/emojis-7.png" /> ¿Lorem ipsum
+                        dolor sit amet?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseSeven"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingSeven"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam saepe id, illo sapiente, suscipit reprehenderit
+                      cupiditate vitae doloremque similique ex, sit laborum
+                      deleniti maiores eveniet soluta repellendus esse animi
+                      cumque.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingEight">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                      <img src="images/icons/emojis-8.png"> ¿Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, qui labore?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt ipsum fugiat accusamus repudiandae ullam quisquam, ad, quos harum, voluptatum id adipisci.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingEight">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseEight"
+                        aria-expanded="false"
+                        aria-controls="collapseEight"
+                      >
+                        <img src="images/icons/emojis-8.png" /> ¿Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit.
+                        Dignissimos, qui labore?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseEight"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingEight"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nesciunt ipsum fugiat accusamus repudiandae ullam
+                      quisquam, ad, quos harum, voluptatum id adipisci.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingNine">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                      <img src="images/icons/emojis-9.png"> ¿Lorem ipsum dolor sit amet consectetur adipisicing elit?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veritatis veniam explicabo.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingNine">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseNine"
+                        aria-expanded="false"
+                        aria-controls="collapseNine"
+                      >
+                        <img src="images/icons/emojis-9.png" /> ¿Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseNine"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingNine"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae veritatis veniam explicabo.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTen">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                      <img src="images/icons/emojis-10.png"> ¿Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia tenetur laudantium! Obcaecati, ut?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, culpa. Nostrum suscipit debitis modi, illo animi vitae, quaerat magnam laborum asperiores quis dolorem? Debitis nemo vel magnam earum voluptatum qui.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTen">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseTen"
+                        aria-expanded="false"
+                        aria-controls="collapseTen"
+                      >
+                        <img src="images/icons/emojis-10.png" /> ¿Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Nesciunt
+                        quia tenetur laudantium! Obcaecati, ut?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseTen"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingTen"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Iusto, culpa. Nostrum suscipit debitis modi, illo animi
+                      vitae, quaerat magnam laborum asperiores quis dolorem?
+                      Debitis nemo vel magnam earum voluptatum qui.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingEleven">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                      <img src="images/icons/emojis-11.png"> ¿Lorem ipsum dolor sit?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel"
-                  aria-labelledby="headingEleven">
-                  <div class="panel-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, maxime? Aliquid ea quis iste minus fugit voluptatum id earum illo quos alias. Quod est doloribus nemo odit ad itaque eligendi.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingEleven">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseEleven"
+                        aria-expanded="false"
+                        aria-controls="collapseEleven"
+                      >
+                        <img src="images/icons/emojis-11.png" /> ¿Lorem ipsum
+                        dolor sit?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseEleven"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingEleven"
+                  >
+                    <div class="panel-body">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, maxime? Aliquid ea quis iste minus fugit
+                      voluptatum id earum illo quos alias. Quod est doloribus
+                      nemo odit ad itaque eligendi.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwelve">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                      <img src="images/icons/emojis-12.png"> ¿Lorem ipsum dolor sit amet consectetur?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel"
-                  aria-labelledby="headingTwelve">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis neque adipisci ab error rem accusamus, officiis ratione fugiat, similique iste aliquid voluptas omnis sequi, velit est eaque hic veritatis.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwelve">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseTwelve"
+                        aria-expanded="false"
+                        aria-controls="collapseTwelve"
+                      >
+                        <img src="images/icons/emojis-12.png" /> ¿Lorem ipsum
+                        dolor sit amet consectetur?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseTwelve"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingTwelve"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Obcaecati quis neque adipisci ab error rem accusamus,
+                      officiis ratione fugiat, similique iste aliquid voluptas
+                      omnis sequi, velit est eaque hic veritatis.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThirteen">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                      href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                      <img src="images/icons/emojis-13.png"> ¿Lorem ipsum dolor sit amet?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel"
-                  aria-labelledby="headingThirteen">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis porro sed recusandae dignissimos, fugiat in reprehenderit. Quos dignissimos rem possimus illum maiores, cupiditate corporis, deleniti enim facere quidem repudiandae.
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThirteen">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseThirteen"
+                        aria-expanded="false"
+                        aria-controls="collapseThirteen"
+                      >
+                        <img src="images/icons/emojis-13.png" /> ¿Lorem ipsum
+                        dolor sit amet?
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseThirteen"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingThirteen"
+                  >
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti perspiciatis porro sed recusandae dignissimos,
+                      fugiat in reprehenderit. Quos dignissimos rem possimus
+                      illum maiores, cupiditate corporis, deleniti enim facere
+                      quidem repudiandae.
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="tienda">
+        <div
+          class="modal fade"
+          id="resultado-tienda"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modalResultadoTienda"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="modalResultadoTienda">
+                  Lorem, ipsum
+                </h4>
+              </div>
+              <div class="modal-body"></div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer2" id="footer2">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 footerP hide-mobile">
+              <div class="footer-links">
+                <h4>Productos</h4>
+                <div class="links">
+                  <a class="italic celeste" onclick="ver_productos('cloro');"
+                    >Cloro en pastillas</a
+                  >
+                  <a class="italic celeste" onclick="ver_productos('cloro');"
+                    >Cloro granulado</a
+                  >
+                  <a
+                    class="italic celeste"
+                    onclick="ver_productos('alguicida');"
+                    >Alguicida</a
+                  >
+                  <a
+                    class="italic celeste"
+                    onclick="ver_productos('clarificador');"
+                    >Clarificador</a
+                  >
+                  <a
+                    class="italic celeste"
+                    onclick="ver_productos('regulacion');"
+                    >Corrector de PH</a
+                  >
+                  <a class="italic celeste" onclick="ver_productos('natabio');"
+                    >Natabio</a
+                  >
+                  <a class="italic celeste" onclick="ver_productos('lona');"
+                    >Piletas de lona</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 footerP hide-mobile">
+              <div class="footer-links">
+                <h4>Lorem, ipsum.</h4>
+                <div class="links">
+                  <a href="#" class="italic celeste">Lorem, ipsum</a>
+                  <a href="#" class="italic celeste">Lorem, ipsum.</a>
+                </div>
+              </div>
+              <div class="footer-buscador">
+                <h4>Lorem, ipsum</h4>
+                <form
+                  onsubmit="buscarTienda(); return false;"
+                  class="form-inline"
+                >
+                  <input
+                    type="text"
+                    placeholder="Cód. Postal ej: 8370"
+                    id="input_cp"
+                    class="form-control"
+                  />
+                  <button type="submit">
+                    <span class="fa fa-search"></span>
+                  </button>
+                </form>
+                <!-- <a href="buscar_tienda.html" class="btn btn-default btn-naranja">Buscar</a> -->
+              </div>
+            </div>
+            <div class="col-sm-3 footerP">
+              <div class="footer-links">
+                <h4>Seguinos!</h4>
+                <div class="links social-icons">
+                  <a href="#" target="_blank" class="social-icon">
+                    <span class="fa fa-facebook"></span>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <span class="fa fa-instagram"></span>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <span class="fa fa-youtube-play"></span>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <span class="fa fa-map-marker"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="footer-contacto">
+                <h4>Contactanos</h4>
+                <div class="links social-icons">
+                  <a href="#" class="social-icon"
+                    ><span class="fa fa-phone"></span
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><span class="fa fa-envelope"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 footerP hide-mobile">
+              <div class="footer-logo">
+                <a href="index.html"
+                  ><img src="images/logo.png" alt="logo" class="img-fluid"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- COPYRIGHT -->
+      <div class="footer-copy">
+        <div class="container d-xl-block">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
+          <a href="#" class="afip"
+            ><img
+              src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg"
+              border="0"
+          /></a>
+        </div>
+        <div class="container d-lg-block d-xl-none">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
+          <div class="omatic">Lorem ipsum dolor sit amet.</div>
+          <a href="#" class="afip"
+            ><img
+              src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg"
+              border="0"
+          /></a>
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
-    <div id="tienda">
-      <div class="modal fade" id="resultado-tienda" tabindex="-1" role="dialog" aria-labelledby="modalResultadoTienda">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                  aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="modalResultadoTienda">Lorem, ipsum</h4>
-            </div>
-            <div class="modal-body">
+    <!-- JAVASCRIPT =============================-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendors/slick/slick.min.js"></script>
+    <script src="js/vendors/jquery.easing.min.js"></script>
+    <script src="js/vendors/stellar.js"></script>
+    <script src="js/vendors/isotope/isotope.pkgd.js"></script>
+    <script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+    <script src="js/vendors/mc/main.js"></script>
+    <script src="js/vendors/contact.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    <!-- <script src="js/vendors/gmap.js"></script> -->
+    <script src="js/tiendas.js"></script>
 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- FOOTER -->
-    <footer class="footer2" id="footer2">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 footerP hide-mobile">
-            <div class="footer-links">
-              <h4>Productos</h4>
-              <div class="links">
-                <a class="italic celeste" onclick="ver_productos('cloro');">Cloro en pastillas</a>
-                <a class="italic celeste" onclick="ver_productos('cloro');">Cloro granulado</a>
-                <a class="italic celeste" onclick="ver_productos('alguicida');">Alguicida</a>
-                <a class="italic celeste" onclick="ver_productos('clarificador');">Clarificador</a>
-                <a class="italic celeste" onclick="ver_productos('regulacion');">Corrector de PH</a>
-                <a class="italic celeste" onclick="ver_productos('natabio');">Natabio</a>
-                <a class="italic celeste" onclick="ver_productos('lona');">Piletas de lona</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 footerP hide-mobile">
-            <div class="footer-links">
-              <h4>Lorem, ipsum.</h4>
-              <div class="links">
-                <a href="#" class="italic celeste">Lorem, ipsum</a>
-                <a href="#" class="italic celeste">Lorem, ipsum.</a>
-              </div>
-            </div>
-            <div class="footer-buscador">
-              <h4>Lorem, ipsum</h4>
-              <form onsubmit="buscarTienda(); return false;" class='form-inline'>
-                <input type="text" placeholder="Cód. Postal ej: 8370" id="input_cp" class="form-control">
-                <button type="submit"><span class="fa fa-search"></span></button>
-              </form>
-              <!-- <a href="buscar_tienda.html" class="btn btn-default btn-naranja">Buscar</a> -->
-            </div>
-          </div>
-          <div class="col-sm-3 footerP">
-            <div class="footer-links">
-              <h4>Seguinos!</h4>
-              <div class="links social-icons">
-                <a href="#" target="_blank" class="social-icon">
-                  <span class="fa fa-facebook"></span>
-                </a>
-                <a href="#" target="_blank" class="social-icon">
-                  <span class="fa fa-instagram"></span>
-                </a>
-                <a href="#" target="_blank" class="social-icon">
-                  <span class="fa fa-youtube-play"></span>
-                </a>
-                <a href="#" target="_blank" class="social-icon">
-                  <span class="fa fa-map-marker"></span>
-                </a>
-              </div>
-            </div>
-            <div class="footer-contacto">
-              <h4>Contactanos</h4>
-              <div class="links social-icons">
-                <a href="#" class="social-icon"><span class="fa fa-phone"></span></a>
-                <a href="#" class="social-icon"><span class="fa fa-envelope"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 footerP hide-mobile">
-            <div class="footer-logo">
-              <a href="index.html"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- COPYRIGHT -->
-    <div class="footer-copy">
-      <div class="container d-xl-block">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> 
-          <a href="#" class="afip"><img src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" ></a>
-      </div>
-      <div class="container d-lg-block d-xl-none">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> 
-        <div class="omatic">
-          Lorem ipsum dolor sit amet.
-        </div>
-          <a href="#" class="afip"><img src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" ></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- JAVASCRIPT =============================-->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/vendors/slick/slick.min.js"></script>
-  <script src="js/vendors/jquery.easing.min.js"></script>
-  <script src="js/vendors/stellar.js"></script>
-  <script src="js/vendors/isotope/isotope.pkgd.js"></script>
-  <script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
-  <script src="js/vendors/mc/main.js"></script>
-  <script src="js/vendors/contact.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
-  <!-- <script src="js/vendors/gmap.js"></script> -->
-  <script src="js/tiendas.js"></script>
-
-  <script>
-    //ver producto
-    function ver_productos(producto) {
-      window.open("productos.html?param:" + producto, "_self");
-    }
-  </script>
-
-</body>
-
+    <script>
+      //ver producto
+      function ver_productos(producto) {
+        window.open("productos.html?param:" + producto, "_self");
+      }
+    </script>
+  </body>
 </html>
+
