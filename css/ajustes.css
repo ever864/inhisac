@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/Gotham-BookIta.otf");
 }
 ::-webkit-scrollbar {
   width: 3px;
@@ -9,18 +8,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #B3AFB3;
+  background: #b3afb3;
   border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #B3AFB3;
+  background: #b3afb3;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F0F0F0;
+  background: #f0f0f0;
   border-radius: 0px;
-  box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
 }
 
 a:not(.fa),
@@ -121,7 +120,7 @@ h6 {
 }
 
 .parallax-content {
-  background: #0148B1;
+  background: #0148b1;
   height: 400px;
 }
 .parallax-content .feature-options {
@@ -162,7 +161,7 @@ h6 {
 }
 
 .bg-orange {
-  background-color: #ED7D33;
+  background-color: #ed7d33;
 }
 .bg-orange h1,
 .bg-orange p,
@@ -259,7 +258,10 @@ h6 {
 .Productos i.prod3 {
   color: #76b72b;
 }
-.Productos .boton-1, .Productos .boton-2, .Productos .boton-3, .Productos .boton-4 {
+.Productos .boton-1,
+.Productos .boton-2,
+.Productos .boton-3,
+.Productos .boton-4 {
   font-weight: 400;
   font-size: 24px;
   border-radius: 5px;
@@ -320,17 +322,17 @@ h6 {
   border-radius: 25px !important;
 }
 .faqs #accordion .panel-title > a.accordion-toggle.collapsed::before,
-.faqs #accordion a.collapsed[data-toggle=collapse]::before {
+.faqs #accordion a.collapsed[data-toggle="collapse"]::before {
   content: "\f067";
 }
 .faqs #accordion .panel-title > a.accordion-toggle::before,
-.faqs #accordion a[data-toggle=collapse]::before {
+.faqs #accordion a[data-toggle="collapse"]::before {
   content: "\f068";
 }
 .faqs #accordion .panel-title > a.accordion-toggle.collapsed::before,
-.faqs #accordion a.collapsed[data-toggle=collapse]::before,
+.faqs #accordion a.collapsed[data-toggle="collapse"]::before,
 .faqs #accordion .panel-title > a.accordion-toggle::before,
-.faqs #accordion a[data-toggle=collapse]::before {
+.faqs #accordion a[data-toggle="collapse"]::before {
   float: right;
   left: unset;
   right: 15px;
@@ -506,7 +508,7 @@ a.btn-azul {
 #productos #mis-filtros li {
   margin: 5px 0;
 }
-#productos #mis-filtros input[type=checkbox] {
+#productos #mis-filtros input[type="checkbox"] {
   width: 20px;
   height: 20px;
   vertical-align: bottom;
@@ -588,7 +590,7 @@ a.btn-azul {
   background-image: url("../images/bg/fondo-productos.png");
   background-size: cover;
 }
-#productos .modal button[type=submit] {
+#productos .modal button[type="submit"] {
   margin-left: 20px;
   background-color: #f68e1e;
   border-color: #f68e1e;
@@ -763,7 +765,12 @@ a.btn-azul {
   font-weight: 400;
   text-align: left;
 }
-#soluciones .parallax-content .feature-options .white-box #consultor-titulo span {
+#soluciones
+  .parallax-content
+  .feature-options
+  .white-box
+  #consultor-titulo
+  span {
   font-weight: 800;
 }
 #soluciones .parallax-content h4 {
@@ -1034,7 +1041,8 @@ a.btn-azul {
     width: 150px;
     margin: 20px 0;
   }
-  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
     max-height: unset;
     min-height: 250px;
   }
@@ -1314,4 +1322,4 @@ a.btn-azul {
   .navbar-toggle {
     padding: 9px 10px;
   }
-}/*# sourceMappingURL=ajustes.css.map */
+} /*# sourceMappingURL=ajustes.css.map */
