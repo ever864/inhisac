@@ -173,13 +173,10 @@ $(document).ready(function () {
 $("#prod1").change(function () {
   switch ($(this).val()) {
     case "1":
-      $("#granulado .comprar").prop(
-        "href",
-        "https://www.tiendanataclor.com.ar/MLA-810735222-cloro-granulado-disolucion-lenta-1kg-nataclor-_JM#position=8&search_layout=stack&type=item&tracking_id=b923c56e-c138-4e9e-80e7-5f4c3aad183d",
-      );
+      $("#granulado .comprar").prop("href", "#");
       $("#granulado_img")
         .attr("src", "images/lista-productos/granulado/1kg.png")
-        .attr("alt", "cloro granulado");
+        .attr("alt", "producto 1");
       break;
     case "2":
       $("#granulado .comprar").prop(
@@ -628,4 +625,3 @@ $("#toggle_filtros").click(function () {
     $(this).css("margin-bottom", "25px");
   });
 });
-
