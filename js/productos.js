@@ -173,10 +173,13 @@ $(document).ready(function () {
 $("#prod1").change(function () {
   switch ($(this).val()) {
     case "1":
-      $("#granulado .comprar").prop("href", "#");
+      $("#granulado .comprar").prop(
+        "href",
+        "https://www.tiendanataclor.com.ar/MLA-810735222-cloro-granulado-disolucion-lenta-1kg-nataclor-_JM#position=8&search_layout=stack&type=item&tracking_id=b923c56e-c138-4e9e-80e7-5f4c3aad183d",
+      );
       $("#granulado_img")
         .attr("src", "images/lista-productos/granulado/1kg.png")
-        .attr("alt", "producto 1");
+        .attr("alt", "cloro granulado");
       break;
     case "2":
       $("#granulado .comprar").prop(
@@ -216,8 +219,8 @@ $("#prod2").change(function () {
         "https://www.tiendanataclor.com.ar/MLA-762534523-cloro-granulado-instantaneo-1kg-nataclor-_JM",
       );
       $("#instantaneo_img")
-        .attr("src", "images/lista-productos/instantaneo/1kg.png")
-        .attr("alt", "cloro granulado instantaneo");
+        .attr("src", "images/lista-productos/mangueras/gebe_y_lona.png")
+        .attr("alt", "manguera gebe y lona");
       break;
     case "2":
       $("#instantaneo .comprar").prop(
